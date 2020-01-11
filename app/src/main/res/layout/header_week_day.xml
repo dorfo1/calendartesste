@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_dark">
+
+
+    <TextView
+        android:id="@+id/domingo"
+        style="@style/textDayHeader"
+        android:text="D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/segunda"
+        style="@style/textDayHeader"
+        android:text="S"
+        app:layout_constraintStart_toEndOf="@id/domingo"
+        app:layout_constraintEnd_toStartOf="@id/terca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/terca"
+        style="@style/textDayHeader"
+        android:text="T"
+        app:layout_constraintStart_toEndOf="@id/segunda"
+        app:layout_constraintEnd_toStartOf="@id/quarta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/quarta"
+        style="@style/textDayHeader"
+        android:text="Q"
+        app:layout_constraintStart_toEndOf="@id/terca"
+        app:layout_constraintEnd_toStartOf="@id/quinta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quinta"
+        style="@style/textDayHeader"
+        android:text="Q"
+        app:layout_constraintStart_toEndOf="@id/quarta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sexta"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/sexta"
+        style="@style/textDayHeader"
+        android:text="S"
+        app:layout_constraintStart_toEndOf="@id/quinta"
+        app:layout_constraintEnd_toStartOf="@id/sabado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sabado"
+        android:text="S"
+        style="@style/textDayHeader"
+        app:layout_constraintStart_toEndOf="@id/sexta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
